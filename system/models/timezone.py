@@ -16,4 +16,4 @@ class Timezone(models.Model):
         verbose_name_plural = "Timezones"
 
     def __str__(self):
-        return f"{self.name} (UTC{self.offset})" if self.offset else self.name
+        return f"{self.name} (UTC{self.offset})" if self.offset else self.namegit
