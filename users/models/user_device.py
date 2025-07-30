@@ -1,6 +1,7 @@
 from django.db import models
 from users.models import User
 from users.managers.user_device_manager import UserDeviceManager
+import uuid
 
 class UserDevice(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
