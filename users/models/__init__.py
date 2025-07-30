@@ -1,4 +1,4 @@
 from .user import User
-from .user_settings import UserSettings
+from .user_setting import UserSetting
 
-__all__ = ['User', 'UserSettings']
+__all__ = ['User', 'UserSetting']

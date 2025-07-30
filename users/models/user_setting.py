@@ -1,8 +1,10 @@
 from django.db import models
 from system.models import Language, Timezone
 from users.models import User
+import uuid
 
-class UserSettings(models.Model):
+class UserSetting(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="settings")
     language = models.ForeignKey(Language, null=True, blank=True, on_delete=models.SET_NULL)
     timezone = models.ForeignKey(Timezone, null=True, blank=True, on_delete=models.SET_NULL)

@@ -4,6 +4,6 @@ from system.models import Timezone
 
 @admin.register(Timezone)
 class TimezoneAdmin(ImportExportModelAdmin):
-    list_display = ("id", "name", "offset")
-    search_fields = ("name", "offset")
+    list_display = ("id", "name", "offset", "code")
+    search_fields = ("name", "offset" , "code")
     ordering = ("offset",)

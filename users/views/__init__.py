@@ -1,4 +1,4 @@
 from .user_viewset import UserViewSet
-from .user_settings_viewset import UserSettingsViewSet
+from .user_setting_viewset import UserSettingViewSet
 
-__all__ = ['UserViewSet', 'UserSettingsViewSet']
+__all__ = ['UserViewSet', 'UserSettingViewSet']

@@ -1,4 +1,4 @@
 from .user_serializer import UserSerializer
-from .user_settings_serializer import UserSettingsSerializer
+from .user_setting_serializer import UserSettingSerializer
 
-__all__ = ['UserSerializer', 'UserSettingsSerializer']
+__all__ = ['UserSerializer', 'UserSettingSerializer']

@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from users.models import UserSettings
+from users.models import UserSetting
 
-class UserSettingsSerializer(serializers.ModelSerializer):
+class UserSettingSerializer(serializers.ModelSerializer):
     class Meta:
-        model = UserSettings
+        model = UserSetting
         fields = [
             'id', 'user', 'language', 'timezone',
             'session_duration', 'date_format',
